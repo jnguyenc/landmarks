@@ -1,6 +1,7 @@
 import React from 'react';
 import './Places.scss';
 //import imagesData from './imgs/imgs.json';
+// Why is import is not working?
 
 export default function ImageBoard() {
     const data = [
@@ -26,13 +27,6 @@ export default function ImageBoard() {
                 <em>Resize the browser's width to see the effects</em>
             </p>
             <div className="imageBoard">{elements}</div>
-            <div>
-                To do:
-                <ul>
-                    <li>Turn the list of paths to a json file. Why it is not working? Need a loader or something?</li>
-                    <li>Create a restful API with Java Springboot to supply a list of places</li>
-                </ul>
-            </div>
         </>
     );
 }
