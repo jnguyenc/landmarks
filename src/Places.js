@@ -1,7 +1,7 @@
 import React from 'react';
 import './Places.scss';
-import jsonData from './imgs/images.json';
-//const jsonData = require('./imgs/images.json'); // use either import or require
+import jsonData from './images.json';
+//const jsonData = require('./images.json'); // use either import or require
 
 const places = jsonData.places;
 
@@ -12,10 +12,12 @@ export default function ImageBoard() {
 
     return (
         <>
-            <h2 className="imageBoard-Header">Most Beautiful Places on Earth</h2>
-            <p>
-                <em>Resize the browser's width to see the effects</em>
-            </p>
+            <div className="imageBoard-Header">
+                <h2>Most Beautiful Places on Earth</h2>
+                <p>
+                    <em>Resize browser's width to see the effects of flexbox</em>
+                </p>
+            </div>
             <div className="imageBoard">{elements}</div>
         </>
     );
