@@ -1,10 +1,10 @@
 import './App.css';
-import ImageBoard from './Places';
+import Landmarks from './Landmarks';
 
 function App() {
     return (
         <div className="App">
-            <ImageBoard />
+            <Landmarks />
         </div>
     );
 }

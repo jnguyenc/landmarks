@@ -3,21 +3,21 @@ $color-sub: rgb(59, 108, 243);
 $color-med: gray;
 $color-light: white;
 
-.imageBoard-Header {
+.landmarksBoard-Header {
     color: $color-prime;
     text-align: center;
+}
+
+.landmarksBoard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .image {
     width: 250px;
     border-radius: 10px;
-}
-
-.imageBoard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 
 @media (min-width: 250px) {

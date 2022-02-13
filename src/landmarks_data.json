@@ -1,0 +1,11 @@
+{
+    "landmarks": [
+        { "name": "ababc", "location": "12345", "imageURL": "pexels-asad-photo-maldives-3293148.jpg" },
+        { "name": "ababc", "location": "12345", "imageURL": "pexels-aleksandar-pasaric-325185.jpg" },
+        { "name": "ababc", "location": "12345", "imageURL": "pexels-errin-casano-2356045.jpg" },
+        { "name": "ababc", "location": "12345", "imageURL": "pexels-francesco-ungaro-2835436.jpg" },
+        { "name": "ababc", "location": "12345", "imageURL": "pexels-irina-iriser-1408221.jpg" },
+        { "name": "ababc", "location": "12345", "imageURL": "pexels-luis-del-río-15286.jpg" },
+        { "name": "ababc", "location": "12345", "imageURL": "pexels-maxime-francis-2246476.jpg" }
+    ]
+}
