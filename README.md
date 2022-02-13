@@ -9,3 +9,7 @@ The front end application requires NodeJS to run. Make sure it is installed in y
 ### cd landmarks
 
 ### npx start
+
+## To do:
+
+#### Create a Java Springboot RESTFUL API to supply information and photo of the most beaufiful landmarks.
