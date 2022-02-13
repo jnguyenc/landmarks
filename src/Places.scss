@@ -1,0 +1,46 @@
+$color-prime: coral;
+$color-sub: rgb(59, 108, 243);
+$color-med: gray;
+$color-light: white;
+
+.imageBoard-Header {
+    color: $color-prime;
+    text-align: center;
+}
+
+.image {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.imageBoard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (min-width: 250px) {
+    .image {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 500px) {
+    .image {
+        flex-basis: 48%;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 750px) {
+    .image {
+        flex-basis: 32%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .image {
+        flex-basis: 24%;
+    }
+}
