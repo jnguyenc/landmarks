@@ -1,14 +1,30 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import './Landmarks.scss';
 import jsonData from './landmarks_data.json';
 //const jsonData = require('./landmarks_data.json'); // use either import (above) or require
-
-const landmarks = jsonData.landmarks;
+const landmarksFromFile = jsonData.landmarks;
+const useAPI = true; // set to false to use local json file.  Set to true when the API is ready
 
 export default function Landmarks() {
+    const [landmarks, setLandmarks] = useState([]);
+    //Springboot Restful API
+    const apiUrl = 'http://127.0.0.1:8080/landmarks';
+    const fetchData = async () => {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        setLandmarks(data.landmarks);
+    };
+    useEffect(() => fetchData(), []);
+    //console.log(landmarks);
+
+    const landmarksData = useAPI ? landmarks : landmarksFromFile;
+
     //converts landmarks data from json to html elements
-    const elements = landmarks.map((e) => {
-        return <img alt="" key={e.imageURL} className="image" src={`./imgs/${e.imageURL}`} />;
+    const elements = landmarksData.map((e) => {
+        const imageURL = e.imageURL.startsWith('http') ? e.imageURL : './imgs/'.concat(e.imageURL);
+        //return <img alt={e.name} key={e.imageURL} className="landmarkImage" src={`./imgs/${e.imageURL}`} />;
+        return <img alt={e.name} key={e.imageURL} className="landmarkImage" src={imageURL} />;
     });
 
     return (

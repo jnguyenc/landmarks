@@ -15,32 +15,32 @@ $color-light: white;
     gap: 10px;
 }
 
-.image {
+.landmarkImage {
     width: 250px;
     border-radius: 10px;
 }
 
 @media (min-width: 250px) {
-    .image {
+    .landmarkImage {
         flex-basis: 100%;
     }
 }
 
 @media (min-width: 500px) {
-    .image {
+    .landmarkImage {
         flex-basis: 48%;
         flex-grow: 1;
     }
 }
 
 @media (min-width: 750px) {
-    .image {
+    .landmarkImage {
         flex-basis: 32%;
     }
 }
 
 @media (min-width: 1000px) {
-    .image {
+    .landmarkImage {
         flex-basis: 24%;
     }
 }

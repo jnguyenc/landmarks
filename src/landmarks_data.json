@@ -1,11 +1,34 @@
 {
     "landmarks": [
-        { "name": "ababc", "location": "12345", "imageURL": "pexels-asad-photo-maldives-3293148.jpg" },
+        {
+            "name": "The the local json file",
+            "location": "12345",
+            "imageURL": "pexels-asad-photo-maldives-3293148.jpg"
+        },
         { "name": "ababc", "location": "12345", "imageURL": "pexels-aleksandar-pasaric-325185.jpg" },
         { "name": "ababc", "location": "12345", "imageURL": "pexels-errin-casano-2356045.jpg" },
         { "name": "ababc", "location": "12345", "imageURL": "pexels-francesco-ungaro-2835436.jpg" },
-        { "name": "ababc", "location": "12345", "imageURL": "pexels-irina-iriser-1408221.jpg" },
         { "name": "ababc", "location": "12345", "imageURL": "pexels-luis-del-río-15286.jpg" },
-        { "name": "ababc", "location": "12345", "imageURL": "pexels-maxime-francis-2246476.jpg" }
+        { "name": "ababc", "location": "12345", "imageURL": "pexels-maxime-francis-2246476.jpg" },
+        {
+            "name": "China",
+            "location": "12345",
+            "imageURL": "https://www.boredpanda.com/blog/wp-content/uploads/2014/03/amazing-places-to-see-before-you-die-6.jpg"
+        },
+        {
+            "name": "China",
+            "location": "12345",
+            "imageURL": "https://www.boredpanda.com/blog/wp-content/uploads/2014/03/amazing-places-to-see-before-you-die-5-2.jpg"
+        },
+        {
+            "name": "Machu Picchu, Peru",
+            "location": "12345",
+            "imageURL": "https://www.boredpanda.com/blog/wp-content/uploads/2014/03/amazing-places-to-see-before-you-die-9.jpg"
+        },
+        {
+            "name": "Santorini Island, Greece",
+            "location": "12345",
+            "imageURL": "https://www.boredpanda.com/blog/wp-content/uploads/2014/03/amazing-places-to-see-before-you-die-4.jpg"
+        }
     ]
 }
