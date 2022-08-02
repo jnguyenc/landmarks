@@ -4,7 +4,7 @@ import './Landmarks.scss';
 import jsonData from './landmarks_data.json';
 //const jsonData = require('./landmarks_data.json'); // use either import (above) or require
 const landmarksFromFile = jsonData.landmarks;
-const useAPI = true; // set to false to use local json file.  Set to true when the API is ready
+const useAPI = false; // set to false to use local json file.  Set to true when the API is ready
 
 export default function Landmarks() {
     const [landmarks, setLandmarks] = useState([]);

@@ -8,6 +8,11 @@ The front end application requires NodeJS to run. Make sure it is installed in y
 
 ### cd landmarks
 
+### npm install
+
+Edit Landmarks.js line 7, set to false it API is not ready.
+const useAPI = false
+
 ### npx start
 
 ## To do:
