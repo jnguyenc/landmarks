@@ -8,7 +8,13 @@ The front end application requires NodeJS to run. Make sure it is installed in y
 
 ### cd landmarks
 
+### npm install
+
 ### npx start
+
+Important Note:
+If an API to provide the photos is not ready, edit Landmarks.js file, line 7, set the value to false.
+const useAPI = false
 
 ## To do:
 
