@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import './Landmarks.scss';
 import jsonData from './landmarks_data.json';
 //const jsonData = require('./landmarks_data.json'); // use either import (above) or require
-const landmarksFromFile = jsonData.landmarks;
-const useAPI = true; // set to false to use local json file.  Set to true when the API is ready
+
+const useAPI = false; // Set to false to use local json file.  Set to true when the API backend is ready
 
 export default function Landmarks() {
     const [landmarks, setLandmarks] = useState([]);
@@ -18,7 +18,7 @@ export default function Landmarks() {
     useEffect(() => fetchData(), []);
     //console.log(landmarks);
 
-    const landmarksData = useAPI ? landmarks : landmarksFromFile;
+    const landmarksData = useAPI ? landmarks : jsonData.landmarks;
 
     //converts landmarks data from json to html elements
     const elements = landmarksData.map((e) => {
